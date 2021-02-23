@@ -1,0 +1,37 @@
+{
+    
+    "notSignedInHome": {
+        "logo":".in",
+        "address":"Select your address",
+        "helloSign":"Hello, Sign in",
+        "account":"Account",
+        "signIn": "Sign in",
+        "signInSecurely": "Sign in securely",
+        "cartCount":"0"
+    }
+    "checkSignIn":{
+        "signIn":"Sign-In",
+        "emailOrPhone":"Email or mobile phone number",
+        "continue":"Continue",
+        "agreement":"By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.",
+        "createNew":"Create your Amazon account"
+    }
+    "checkCreateNew":{
+        "createAccount":"Create Account",
+        "yourName":"Your name",
+        "mobileNo":"Mobile number",
+        "in91":"IN +91",
+        "email":"Email (optional)",
+        "password":"Password",
+        "suggest":"Passwords must be at least 6 characters.",
+        "info":"We will send you a text to verify your phone.",
+        "info2":"Message and Data rates may apply.",
+        "continue":"Continue",
+        "alreadyCustomer":"Already have an account? Sign in",
+        "signIn":"Sign in"
+    }
+    "signInAction":{
+        "incorrect":"Incorrect"
+        "there":"There was a problem"
+    }
+}
