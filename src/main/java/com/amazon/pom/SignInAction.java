@@ -26,7 +26,7 @@ public class SignInAction extends POMMaster{
 	}
 	
 	public boolean loginWithUserDetails() {
-		userData = userLogin.getUserData();
+		userData = userLogin.getUserData(0);
 		boolean res[] = new boolean[userData.length];
 		int in =0;
 		for(String[] row: userData) {
@@ -37,6 +37,10 @@ public class SignInAction extends POMMaster{
 			enterData(password, row[2]);
 			clickContinue(continueButton);
 			res[in] = checkGui(row);
+			if(!res[in]) {
+				logger.info(row[1]+" failed the test");
+				return false;
+			}
 			in++;
 			try {
 				element = driver.findElement(hello);
@@ -46,9 +50,7 @@ public class SignInAction extends POMMaster{
 				
 			}
 		}
-		for(boolean r: res) {
-			if(!r) return r;
-		}
+		
 		return true;
 	}
 	

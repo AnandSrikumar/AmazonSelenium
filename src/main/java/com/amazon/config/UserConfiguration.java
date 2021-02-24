@@ -23,12 +23,12 @@ public class UserConfiguration {
 		path = System.getProperty("user.dir");
 		path += "/Configurations/"+fileName;
 	}
-	public String[][] getUserData(){
+	public String[][] getUserData(int sheetNo){
 		String[][] data = null;
 		try {
 			fis = new FileInputStream(new File(path));
 			workbook = new XSSFWorkbook(fis);
-			Sheet sheet = workbook.getSheetAt(0);
+			Sheet sheet = workbook.getSheetAt(sheetNo);
 			int rows = sheet.getLastRowNum();
 			Row row = sheet.getRow(0);
 			int cols = row.getLastCellNum();

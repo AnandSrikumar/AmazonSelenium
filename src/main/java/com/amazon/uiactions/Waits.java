@@ -30,6 +30,9 @@ public WebElement explicitWait(long time, By locator,int condition) {
 	 case 2:
 		 el = wait.until(ExpectedConditions.elementToBeClickable(locator));
 		 break;
+	 default:
+		 el = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		 
 	 }
 	 return el;
 }

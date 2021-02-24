@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import com.amazon.config.Properties;
 import com.amazon.config.UserConfiguration;
@@ -95,4 +96,27 @@ public class POMMaster {
 		Action move = builder.moveToElement(loc).build();
 		move.perform();
 	}
+	
+	public void selectBy(By loc, String text, int cond) {
+		element = driver.findElement(loc);
+		Select select = new Select(element);
+		switch(cond) {
+		case 0:
+			select.selectByVisibleText(text);
+			break;
+		case 1:
+			try {
+				select.selectByIndex(Integer.parseInt(text));
+			}
+			catch(Exception e) {
+				
+			}
+			
+		default:
+			select.selectByVisibleText(text);
+			
+		}
+		
+	}
+	
 }
