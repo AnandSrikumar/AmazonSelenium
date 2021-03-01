@@ -10,13 +10,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import com.amazon.config.Properties;
 import com.amazon.config.UserConfiguration;
+import com.amazon.uiactions.MouseActions;
 import com.amazon.uiactions.Scrolling;
+import com.amazon.uiactions.SelectAction;
 import com.amazon.uiactions.Waits;
 
 public class POMMaster {
@@ -32,7 +32,8 @@ public class POMMaster {
 	Waits waiting;
 	String s1, s2, pomS;
 	boolean truthVal;
-	Actions builder;
+	MouseActions mouse;
+	SelectAction selects;
 	
 	public POMMaster() {
 		prop = new Properties();
@@ -44,7 +45,8 @@ public class POMMaster {
 		BasicConfigurator.configure();
 		scroll = new Scrolling(driver, executor);
 		waiting =  new Waits(driver);
-		builder = new Actions(driver);
+		mouse = new MouseActions(driver);
+		selects = new SelectAction(driver);
 		navigateToAmazon();
 	}
 	
@@ -92,31 +94,6 @@ public class POMMaster {
 		driver.get(url);
 		logger.info("We successfully configured properties");
 	}
-	public void moveToElement(WebElement loc) {
-		Action move = builder.moveToElement(loc).build();
-		move.perform();
-	}
 	
-	public void selectBy(By loc, String text, int cond) {
-		element = driver.findElement(loc);
-		Select select = new Select(element);
-		switch(cond) {
-		case 0:
-			select.selectByVisibleText(text);
-			break;
-		case 1:
-			try {
-				select.selectByIndex(Integer.parseInt(text));
-			}
-			catch(Exception e) {
-				
-			}
-			
-		default:
-			select.selectByVisibleText(text);
-			
-		}
-		
-	}
 	
 }

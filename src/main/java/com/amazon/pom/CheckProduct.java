@@ -47,7 +47,8 @@ public class CheckProduct extends POMMaster {
 		int i =0;
 		for(String row[]: data) {
 			logger.info(row[0]+"..");
-			selectBy(select, row[1], 0);
+			element = driver.findElement(select);
+			selects.selectByVisibleText(element, row[1], 0);
 			element = driver.findElement(searchAr);
 			element.clear();
 			element.sendKeys(row[0]);

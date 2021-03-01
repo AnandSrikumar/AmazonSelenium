@@ -1,29 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-24T21:32:05Z" name="Default suite" finished-at="2021-02-24T21:32:47Z" duration-ms="42686">
+  <suite started-at="2021-03-01T10:23:15Z" name="Amazon-GUI" finished-at="2021-03-01T10:24:57Z" duration-ms="102743">
     <groups>
     </groups>
-    <test started-at="2021-02-24T21:32:05Z" name="Default test" finished-at="2021-02-24T21:32:47Z" duration-ms="42686">
+    <test started-at="2021-03-01T10:23:15Z" name="notSignedIn" finished-at="2021-03-01T10:23:44Z" duration-ms="29736">
+      <class name="com.amazon.automateTest.NotSignedInHomeTest">
+        <test-method is-config="true" signature="initPOM()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:15Z" name="initPOM" finished-at="2021-03-01T10:23:43Z" duration-ms="28233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPOM -->
+        <test-method signature="testAddress()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:43Z" name="testAddress" finished-at="2021-03-01T10:23:43Z" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddress -->
+        <test-method signature="testCartCount()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:43Z" name="testCartCount" finished-at="2021-03-01T10:23:43Z" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartCount -->
+        <test-method signature="testLogo()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:43Z" name="testLogo" finished-at="2021-03-01T10:23:43Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testSignInButton()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:43Z" name="testSignInButton" finished-at="2021-03-01T10:23:44Z" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInButton -->
+        <test-method signature="testSignin()[pri:0, instance:com.amazon.automateTest.NotSignedInHomeTest@1e730495]" started-at="2021-03-01T10:23:44Z" name="testSignin" finished-at="2021-03-01T10:23:44Z" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignin -->
+      </class> <!-- com.amazon.automateTest.NotSignedInHomeTest -->
+    </test> <!-- notSignedIn -->
+    <test started-at="2021-03-01T10:23:45Z" name="signIn" finished-at="2021-03-01T10:24:29Z" duration-ms="44408">
+      <class name="com.amazon.automateTest.SignInActionTest">
+        <test-method is-config="true" signature="initPom()[pri:0, instance:com.amazon.automateTest.SignInActionTest@6b26e945]" started-at="2021-03-01T10:24:04Z" name="initPom" finished-at="2021-03-01T10:24:16Z" duration-ms="11688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPom -->
+        <test-method signature="loginUsers()[pri:0, instance:com.amazon.automateTest.SignInActionTest@6b26e945]" started-at="2021-03-01T10:24:16Z" name="loginUsers" finished-at="2021-03-01T10:24:22Z" duration-ms="6387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUsers -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.amazon.automateTest.SignInActionTest@6b26e945]" started-at="2021-03-01T10:24:22Z" name="closeBrowser" finished-at="2021-03-01T10:24:22Z" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.amazon.automateTest.SignInActionTest -->
+      <class name="com.amazon.automateTest.checkSignInTest">
+        <test-method is-config="true" signature="initPOM()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:23:45Z" name="initPOM" finished-at="2021-03-01T10:24:03Z" duration-ms="18586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPOM -->
+        <test-method signature="checkAgreement()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="checkAgreement" finished-at="2021-03-01T10:24:03Z" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAgreement -->
+        <test-method signature="checkContinue()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="checkContinue" finished-at="2021-03-01T10:24:03Z" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContinue -->
+        <test-method signature="checkCreateNew()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="checkCreateNew" finished-at="2021-03-01T10:24:03Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCreateNew -->
+        <test-method signature="checkEmailOrPhone()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="checkEmailOrPhone" finished-at="2021-03-01T10:24:03Z" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmailOrPhone -->
+        <test-method signature="checkSignInText()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="checkSignInText" finished-at="2021-03-01T10:24:03Z" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSignInText -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.amazon.automateTest.checkSignInTest@4df50bcc]" started-at="2021-03-01T10:24:03Z" name="closeBrowser" finished-at="2021-03-01T10:24:04Z" duration-ms="819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.amazon.automateTest.checkSignInTest -->
+      <class name="com.amazon.automateTest.CheckCreateNewTest">
+        <test-method is-config="true" signature="initPom()[pri:0, instance:com.amazon.automateTest.CheckCreateNewTest@63a65a25]" started-at="2021-03-01T10:24:22Z" name="initPom" finished-at="2021-03-01T10:24:28Z" duration-ms="5698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPom -->
+        <test-method signature="checkLabels()[pri:0, instance:com.amazon.automateTest.CheckCreateNewTest@63a65a25]" started-at="2021-03-01T10:24:28Z" name="checkLabels" finished-at="2021-03-01T10:24:28Z" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLabels -->
+        <test-method signature="checkPasswordSug()[pri:0, instance:com.amazon.automateTest.CheckCreateNewTest@63a65a25]" started-at="2021-03-01T10:24:28Z" name="checkPasswordSug" finished-at="2021-03-01T10:24:28Z" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPasswordSug -->
+        <test-method signature="validateTexts()[pri:0, instance:com.amazon.automateTest.CheckCreateNewTest@63a65a25]" started-at="2021-03-01T10:24:28Z" name="validateTexts" finished-at="2021-03-01T10:24:29Z" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTexts -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.amazon.automateTest.CheckCreateNewTest@63a65a25]" started-at="2021-03-01T10:24:29Z" name="closeBrowser" finished-at="2021-03-01T10:24:29Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.amazon.automateTest.CheckCreateNewTest -->
+    </test> <!-- signIn -->
+    <test started-at="2021-03-01T10:24:29Z" name="productTesing" finished-at="2021-03-01T10:24:57Z" duration-ms="28205">
       <class name="com.amazon.automateTest.CheckProductTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.amazon.automateTest.CheckProductTest@6e6f2380]" started-at="2021-02-24T21:32:05Z" name="init" finished-at="2021-02-24T21:32:14Z" duration-ms="9729" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.amazon.automateTest.CheckProductTest@56de5251]" started-at="2021-03-01T10:24:29Z" name="init" finished-at="2021-03-01T10:24:33Z" duration-ms="3619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="checkProductInSearch()[pri:1, instance:com.amazon.automateTest.CheckProductTest@6e6f2380]" started-at="2021-02-24T21:32:14Z" name="checkProductInSearch" finished-at="2021-02-24T21:32:29Z" duration-ms="14308" status="PASS">
+        <test-method signature="checkProductInSearch()[pri:1, instance:com.amazon.automateTest.CheckProductTest@56de5251]" started-at="2021-03-01T10:24:33Z" name="checkProductInSearch" finished-at="2021-03-01T10:24:39Z" duration-ms="6705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProductInSearch -->
-        <test-method signature="checkProductInPage()[pri:3, instance:com.amazon.automateTest.CheckProductTest@6e6f2380]" started-at="2021-02-24T21:32:29Z" name="checkProductInPage" finished-at="2021-02-24T21:32:47Z" duration-ms="18477" status="PASS">
+        <test-method signature="checkProductInPage()[pri:3, instance:com.amazon.automateTest.CheckProductTest@56de5251]" started-at="2021-03-01T10:24:39Z" name="checkProductInPage" finished-at="2021-03-01T10:24:57Z" duration-ms="17597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProductInPage -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:com.amazon.automateTest.CheckProductTest@6e6f2380]" started-at="2021-02-24T21:32:47Z" name="destroy" finished-at="2021-02-24T21:32:47Z" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.amazon.automateTest.CheckProductTest@56de5251]" started-at="2021-03-01T10:24:57Z" name="destroy" finished-at="2021-03-01T10:24:57Z" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
       </class> <!-- com.amazon.automateTest.CheckProductTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- productTesing -->
+  </suite> <!-- Amazon-GUI -->
 </testng-results>

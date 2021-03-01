@@ -15,4 +15,8 @@
 
 </classes>
 </test>
+<test name="productTesing">
+<classes>
+<class name="com.amazon.automateTest.CheckProductTest">
+</class></classes></test>
 </suite>

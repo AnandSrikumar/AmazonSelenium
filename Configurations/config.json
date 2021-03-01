@@ -3,5 +3,6 @@
     "driver-path":"/Configurations/chromedriver"
     "url":"https://amazon.in"
     "driverUrl":"webdriver.chrome.driver"
+    "headless":"false"
     
 }

@@ -44,7 +44,7 @@ public class SignInAction extends POMMaster{
 			in++;
 			try {
 				element = driver.findElement(hello);
-				moveToElement(element);
+				mouse.moveToElement(element);
 				driver.findElement(signOut).click();
 			}catch(Exception e) {
 				
